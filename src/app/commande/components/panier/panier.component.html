@@ -1,0 +1,17 @@
+<section>
+    <br> <h3 class=" tracking-in-expand text-center text-black que_faisons_nous fw-bold my-3" > Votre panier  </h3> <br>
+
+    <div class="col-10 col-md-6 col-lg-4 heartbeat" *ngFor="let element of element" >
+        <div class="card my-4 puff-in-br bg-light " style="width: 18rem;" >
+            <button class="card-body"   >
+                <img src="/assets/toyota vx.png" class="img-fluid" alt="...">
+                <p class="card-text text-center fw-bold"> TOYOTA LAND CRUISER VX </p>
+                <p class="fw-bold text-center">{{element.montant}} {{element.etat}} </p>
+                <p class="fw-bold text-center">{{element.type}} </p>
+            </button>
+        </div>
+    </div>
+    <a href="catalogue/affiche" class=" mb-2 d-flex justify-content-center" style="text-decoration: none;">
+        <button type="button" class="jello-horizontal btn btn-danger btn-lg rouge text-black" style="background-color: white;"> <strong>Valider ma commande</strong> </button>
+    </a>
+</section>

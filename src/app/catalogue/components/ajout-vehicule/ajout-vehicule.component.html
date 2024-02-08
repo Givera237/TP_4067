@@ -1,0 +1,69 @@
+<section style="margin-top: 75px;">
+    <div class="container">
+      <div class="row"> 
+        <div class="col-1"></div>
+        <div class="col-7 offset-1">
+          <form (submit)="onSubmit()">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">modele</label>
+              <input type="text" class="form-control" [(ngModel)]="modele" name="modele">
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">Couleur</label>
+              <input type="text" class="form-control" [(ngModel)]="couleur" name="couleur">
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">Puissance</label>
+              <input type="number" class="form-control" [(ngModel)]="puissance" name="puissance">
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Marque</label>
+              <input type="text" class="form-control" [(ngModel)]="marque" name="marque">
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Prix</label>
+              <input type="number" class="form-control" [(ngModel)]="prix" name="prix">
+            </div>
+            <div class="col-6 offset-3 offset-sm-1 offset-md-2 d-flex justify-content-center">
+              <button type="submit" class="btn btn-primary mt-3 mb-3 text-black btn_connexion">Envoyer</button>
+  
+            </div>
+          </form>
+        </div>
+     </div>
+    </div>
+  
+  </section>
+  
+  
+  <div class="fond" style="margin-top: 80px;">
+    <div class="container ">
+        <div class="col-4 col-sm-6 col-md-5 offset-0 offset-md-3 p-4 d-flex justify-content-center">
+             <form [formGroup]="vehiculeForm" class="row g-3 cont">
+                <label for="pseudo" class="for-label"> <h4 class="fw-bold text-center text-black text-uppercase">AJOUT</h4> </label><br><br>
+                <span>modele <em>*</em></span> <span style="color: white;"> </span>
+                <input type="text" class="form-control mt-1 mb-3 p-1" formControlName="modele" id="modele" placeholder="Votre modele "><br>
+                
+                <span>couleur <em>*</em></span>
+                <input type="text" class="form-control mt-1 mb-3 p-1" formControlName="couleur" id="couleur" placeholder="Votre couleur ">
+                
+                <span>puissance <em>*</em></span>
+                <input type="number" class="form-control mt-1 mb-3 p-1" formControlName="puissance" id="puissance" placeholder="Votre puissance ">
+                
+                <span>marque <em>*</em></span>
+                <input type="text" class="form-control mt-1 mb-3 p-1" formControlName="marque" id="marque" placeholder="Votre marque ">
+                
+                <span>prix <em>*</em></span>
+                <input type="number" class="form-control mt-1 mb-3 p-1" formControlName="prix" id="prix" placeholder="Votre prix ">
+                
+                
+                <div class="col-6 offset-3 offset-sm-1 offset-md-2 d-flex justify-content-center">
+                    <button type="submit" (click)="Submit()" [disabled]="vehiculeForm.invalid" class="btn btn-primary mt-3 mb-3 text-black btn_connexion">Ajouter</button>
+                </div>
+                
+             </form>
+         </div>
+        
+    </div>
+</div>
+

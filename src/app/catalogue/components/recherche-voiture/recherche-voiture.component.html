@@ -1,0 +1,36 @@
+<button id="loupe-button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#formulaire-recherche" aria-expanded="false" aria-controls="formulaire-recherche">
+    <i class="fas fa-search"></i>
+  </button>
+  
+  <div class="collapse" id="formulaire-recherche">
+    <form>
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Rechercher...">
+        <button class="btn btn-outline-secondary" type="button">Rechercher</button>
+      </div>
+    </form>
+  </div>
+
+  <style type="text/css">
+    .hiddenDiv
+    {
+        display:none;
+    }
+    .buutonHidder:hover > .hiddenDiv
+    {
+        display: inherit;
+    }
+</style>
+<div class="buutonHidder">
+    <a href="#">Connection</a>
+    <div class="hiddenDiv">
+        <form action="" id="connection">
+            <fieldset>
+                <legend>connection</legend>
+                <label>login</label><input type="text" required="required"/>
+                <label>pass</label><input type="password" required="required"/>
+                <input type="submit" value="Go"/>
+            </fieldset>
+        </form>
+    </div>
+</div>

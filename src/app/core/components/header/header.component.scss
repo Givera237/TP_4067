@@ -1,0 +1,11 @@
+.hiddenDiv
+{
+    display:none;
+}
+.buutonHidder:hover > .hiddenDiv
+{
+    display: inherit;
+}
+.rouge:hover {
+    background-color: red !important;
+  }

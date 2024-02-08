@@ -1,0 +1,39 @@
+<section>
+    <div class="container bg-light">
+        <div class="row mt-5">
+            <br> <h3 class=" tracking-in-expand text-center text-black que_faisons_nous fw-bold my-3" > TOYOTA LAND CRUISER VX </h3> <br>
+            <div class="col-11">
+                <img src="/assets/toyota vx.png" class="img-fluid" alt="...">
+            </div> <br><br>
+        </div>
+    </div>
+  
+</section>
+<div class="fond" style="margin-top: 80px;">
+    <div class="container ">
+        <div class="col-4 col-sm-6 col-md-5 offset-0 offset-md-3 p-4 d-flex justify-content-center">
+             <form [formGroup]="vehiculeForm" class="row g-3 cont">
+                <label for="pseudo" class="for-label"> <h4 class="fw-bold text-center text-black text-uppercase">AJOUT</h4> </label><br><br>
+                <span>Etat <em>*</em></span> <span style="color: white;"> </span>
+                <input type="text" class="form-control mt-1 mb-3 p-1" formControlName="etat" id="etat" value="en cours... "><br>
+                
+                <span>type <em>*</em></span>
+                <input type="text" class="form-control mt-1 mb-3 p-1" formControlName="type" id="type" placeholder="Votre type ">
+                
+                <span>document <em>*</em></span>
+                <input type="text" class="form-control mt-1 mb-3 p-1" formControlName="type_document" id="type_document" placeholder="Votre document ">
+                
+                <span>montant <em>*</em></span>
+                <input type="number" class="form-control mt-1 mb-3 p-1" formControlName="montant" id="montant" placeholder="Votre montant ">
+                           
+                
+                <div class="col-6 offset-3 offset-sm-1 offset-md-2 d-flex justify-content-center">
+                    <button type="submit" (click)="addPanier()" [disabled]="vehiculeForm.invalid" class="btn btn-primary mt-3 mb-3 text-black btn_connexion">Ajouter au panier</button>
+                </div>
+                
+             </form>
+         </div>
+        
+    </div>
+</div>
+   
